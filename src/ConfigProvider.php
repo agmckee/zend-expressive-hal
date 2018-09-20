@@ -25,7 +25,7 @@ use Zend\Expressive\Hal\ResourceGenerator\UrlBasedResourceStrategy;
 
 class ConfigProvider
 {
-    public function __invoke() : array
+    public function __invoke()
     {
         return [
             'dependencies'        => $this->getDependencies(),
@@ -33,7 +33,7 @@ class ConfigProvider
         ];
     }
 
-    public function getDependencies() : array
+    public function getDependencies()
     {
         return [
             'aliases' => [
@@ -56,7 +56,7 @@ class ConfigProvider
         ];
     }
 
-    public function getHalConfig() : array
+    public function getHalConfig()
     {
         return [
             'resource-generator' => [
